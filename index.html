@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-
-<html lang="ja">
+<html>
 <head>
-    <title>ボタンはじける</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.scss">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="move.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>水銀のように融合する動き</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<div class="container">
+		<div class="circle circle1"></div>
+		<div class="circle circle2"></div>
+	</div>
 
-<button class="bubbly-button">Click me!</button>
-
+	<svg>
+		<filter id="gooey">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+			<feColorMatrix values="
+			1 0 0 0 0
+			0 1 0 0 0
+			0 0 1 0 0
+			0 0 0 20 -10
+			"/>
+		</filter>
+	</svg>
 
 </body>
-
 </html>
