@@ -40,7 +40,7 @@ body{
 	border-radius:50%;
 	background:#fff;
 	z-index:-1;
-	filter:blur(50px)
+	filter:blur(50px);
 }
 
 .container .circle.circle1,
@@ -93,5 +93,5 @@ body{
 
 svg{
 	width:0;
-	heigh:0;
+	height:0;
 }
